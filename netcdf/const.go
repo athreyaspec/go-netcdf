@@ -50,6 +50,11 @@ const (
 	STRING Type = C.NC_STRING // string
 )
 
+// Unlimited size for dimension
+const (
+	NC_UNLIMITED uint64 = C.NC_UNLIMITED
+)
+
 var typeNames = map[Type]string{
 	BYTE:   "BYTE",
 	CHAR:   "CHAR",

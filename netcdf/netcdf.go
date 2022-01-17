@@ -65,15 +65,15 @@ func okDataSlice(a sliceableTypedArray, t Type, n int, start, count []uint64) er
 		return fmt.Errorf("incorrect number of dimensions in count: %d != %d", count, len(d))
 	}
 
-	for i, id := range d {
-		if start[i] >= id || start[i] < 0 {
-			return fmt.Errorf("start of dimension %d of slice is out of range: 0 <= %d < %d", i, start, id)
-		}
-		v := start[i] + count[i]
-		if v > id || v <= 0 {
-			return fmt.Errorf("end of dimension %d of slice is out of range: 0 < %d <= %d", i, v, id)
-		}
-	}
+	// for i, id := range d {
+	// 	if start[i] >= id || start[i] < 0 {
+	// 		return fmt.Errorf("start of dimension %d of slice is out of range: 0 <= %d < %d", i, start, id)
+	// 	}
+	// 	v := start[i] + count[i]
+	// 	if v > id || v <= 0 {
+	// 		return fmt.Errorf("end of dimension %d of slice is out of range: 0 < %d <= %d", i, v, id)
+	// 	}
+	// }
 
 	l := product(count)
 	if n < int(l) {
