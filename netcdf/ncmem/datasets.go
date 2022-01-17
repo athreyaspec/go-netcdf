@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"github.com/fhs/go-netcdf/netcdf"
+	"github.com/athreyaspec/go-netcdf/netcdf"
 )
 
 // Flags define how the netCDF library should manage memory.

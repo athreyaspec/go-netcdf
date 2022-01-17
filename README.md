@@ -19,4 +19,4 @@ First, make sure you have the netCDF C library is installed. Most Linux distribu
 
 Then, to install go-netcdf, run:
 
-	$ go get github.com/fhs/go-netcdf/netcdf
+	$ go get github.com/athreyaspec/go-netcdf/netcdf
