@@ -81,6 +81,11 @@ func (ds Dataset) NAttrs() (n int, err error) {
 	return
 }
 
+// Sync and flush the current dataset to file. Need to run in a mutex world
+func (ds Dataset) Sync() error {
+	return newError(C.nc_sync(C.int(ds)))
+}
+
 // Version returns a string identifying the version of the netCDF library,
 // and when it was built.
 func Version() string {
