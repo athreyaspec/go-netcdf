@@ -4,7 +4,6 @@
 
 package netcdf
 
-// #cgo pkg-config: netcdf
 // #include <stdlib.h>
 // #include <netcdf.h>
 import "C"
