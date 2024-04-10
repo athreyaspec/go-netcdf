@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/athreyaspec/go-netcdf/netcdf"
+	"github.com/CrapsJeroen/go-netcdf/netcdf"
 )
 
 func TestOpenReader(t *testing.T) {

@@ -1,3 +1,3 @@
-module github.com/athreyaspec/go-netcdf
+module github.com/CrapsJeroen/go-netcdf
 
 go 1.12
