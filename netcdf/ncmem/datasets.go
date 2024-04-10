@@ -7,7 +7,6 @@
 // https://www.unidata.ucar.edu/software/netcdf/docs/md__Volumes_Workspace_releases_netcdf-c-4_87_84_netcdf-c_docs_inmemory.html
 package ncmem
 
-// #cgo pkg-config: netcdf
 // #include <stdlib.h>
 // #include <netcdf.h>
 // #include <netcdf_mem.h>
@@ -19,7 +18,7 @@ import (
 	"reflect"
 	"unsafe"
 
-	"github.com/athreyaspec/go-netcdf/netcdf"
+	"github.com/CrapsJeroen/go-netcdf/netcdf"
 )
 
 // Flags define how the netCDF library should manage memory.

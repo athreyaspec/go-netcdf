@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/athreyaspec/go-netcdf/netcdf"
+	"github.com/CrapsJeroen/go-netcdf/netcdf"
 )
 
 // CreateExampleFile creates an example NetCDF file containing only one variable.
